@@ -8,6 +8,8 @@
         content="Autoškola Kuba – moderní autoškola v Praze. Získejte řidičák snadno a rychle. Kurzy skupin B, A, AM a další.">
     <title>Autoškola Kuba – Získejte řidičák snadno a rychle</title>
     <link rel="stylesheet" href="style.css">
+    <!-- lightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2/css/lightgallery-bundle.min.css">
 </head>
 
 <body>
@@ -70,42 +72,68 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="vehicles-grid">
-                    <!-- Card 1 -->
-                    <div class="vehicle-card">
+                    <!-- Card 1 - Škoda Fabia -->
+                    <div class="vehicle-card" id="gallery-fabia">
                         <div class="photo-placeholder red">
-                            <span class="placeholder-icon">📷</span>
-                            Foto vozidla – Škoda Fabia
+                            <img src="./foto/skoda-fabia.png" alt="Škoda Fabia – z šikma">
                         </div>
                         <div class="vehicle-card-body">
-                            <h3>Škoda Fabia</h3>
-                            <p>Kompaktní a obratný vůz ideální pro výcvik ve městě. Manuální převodovka, klimatizace.
-                            </p>
+                            <h2>Škoda Fabia</h2>
+                            <p>Kompaktní a obratný vůz ideální pro výcvik ve městě. Manuální převodovka, klimatizace.</p>
                             <span class="vehicle-badge">Skupina B</span>
                         </div>
+                        <!-- Skryté fotky pro galerii -->
+                        <a href="./foto/skoda-fabia.png" class="gallery-item" data-sub-html="<h4>Škoda Fabia – z šikma</h4>">
+                            <img src="./foto/skoda-fabia.png" alt="Škoda Fabia – z šikma">
+                        </a>
+                        <a href="./foto/skoda-fabia-front.png" class="gallery-item" data-sub-html="<h4>Škoda Fabia – zepředu</h4>">
+                            <img src="./foto/skoda-fabia-front.png" alt="Škoda Fabia – zepředu">
+                        </a>
+                        <a href="./foto/skoda-fabia-side.png" class="gallery-item" data-sub-html="<h4>Škoda Fabia – z boku</h4>">
+                            <img src="./foto/skoda-fabia-side.png" alt="Škoda Fabia – z boku">
+                        </a>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="vehicle-card">
+                    <!-- Card 2 - Volkswagen Golf -->
+                    <div class="vehicle-card" id="gallery-golf">
                         <div class="photo-placeholder dark">
-                            <span class="placeholder-icon">📷</span>
-                            Foto vozidla – Volkswagen Golf
+                            <img src="./foto/vw-golf.png" alt="Volkswagen Golf – z šikma">
                         </div>
                         <div class="vehicle-card-body">
-                            <h3>Volkswagen Golf</h3>
+                            <h2>Volkswagen Golf</h2>
                             <p>Spolehlivý a komfortní vůz s automatickou převodovkou. Skvělé jízdní vlastnosti.</p>
                             <span class="vehicle-badge">Skupina B – automat</span>
                         </div>
+                        <!-- Skryté fotky pro galerii -->
+                        <a href="./foto/vw-golf.png" class="gallery-item" data-sub-html="<h4>Volkswagen Golf – z šikma</h4>">
+                            <img src="./foto/vw-golf.png" alt="Volkswagen Golf – z šikma">
+                        </a>
+                        <a href="./foto/vw-golf-front.png" class="gallery-item" data-sub-html="<h4>Volkswagen Golf – zepředu</h4>">
+                            <img src="./foto/vw-golf-front.png" alt="Volkswagen Golf – zepředu">
+                        </a>
+                        <a href="./foto/vw-golf-side.png" class="gallery-item" data-sub-html="<h4>Volkswagen Golf – z boku</h4>">
+                            <img src="./foto/vw-golf-side.png" alt="Volkswagen Golf – z boku">
+                        </a>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="vehicle-card">
+                    <!-- Card 3 - Honda CBR 500R -->
+                    <div class="vehicle-card" id="gallery-honda">
                         <div class="photo-placeholder grey">
-                            <span class="placeholder-icon">📷</span>
-                            Foto vozidla – Honda CBR 500R
+                            <img src="./foto/honda-cbr.png" alt="Honda CBR 500R – z šikma">
                         </div>
                         <div class="vehicle-card-body">
-                            <h3>Honda CBR 500R</h3>
+                            <h2>Honda CBR 500R</h2>
                             <p>Sportovní motocykl pro výcvik skupiny A. ABS, moderní podvozek a nízká hmotnost.</p>
                             <span class="vehicle-badge">Skupina A</span>
                         </div>
+                        <!-- Skryté fotky pro galerii -->
+                        <a href="./foto/honda-cbr.png" class="gallery-item" data-sub-html="<h4>Honda CBR 500R – z šikma</h4>">
+                            <img src="./foto/honda-cbr.png" alt="Honda CBR 500R – z šikma">
+                        </a>
+                        <a href="./foto/honda-cbr-front.png" class="gallery-item" data-sub-html="<h4>Honda CBR 500R – zepředu</h4>">
+                            <img src="./foto/honda-cbr-front.png" alt="Honda CBR 500R – zepředu">
+                        </a>
+                        <a href="./foto/honda-cbr-side.png" class="gallery-item" data-sub-html="<h4>Honda CBR 500R – z boku</h4>">
+                            <img src="./foto/honda-cbr-side.png" alt="Honda CBR 500R – z boku">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -126,7 +154,7 @@
                             <h3>B</h3>
                             <div class="category">Osobní automobil</div>
                         </div>
-                        <div class="pricing-price">18 900 <small>Kč</small></div>
+                        <div class="pricing-price">21 300 <small>Kč</small></div>
                         <ul class="pricing-features">
                             <li>Teorie – 40 hodin</li>
                             <li>Praktický výcvik – 28 hodin</li>
@@ -143,7 +171,7 @@
                             <h3>A</h3>
                             <div class="category">Motocykl</div>
                         </div>
-                        <div class="pricing-price">14 500 <small>Kč</small></div>
+                        <div class="pricing-price">19 400<small>Kč</small></div>
                         <ul class="pricing-features">
                             <li>Teorie – 4 hodiny</li>
                             <li>Praktický výcvik – 16 hodin</li>
@@ -159,7 +187,7 @@
                             <h3>A+B</h3>
                             <div class="category">Motocykl + Osobní automobil</div>
                         </div>
-                        <div class="pricing-price">29 900 <small>Kč</small></div>
+                        <div class="pricing-price">32 700<small>Kč</small></div>
                         <ul class="pricing-features">
                             <li>Teorie – 44 hodin</li>
                             <li>Praktický výcvik – 44 hodin</li>
@@ -184,7 +212,7 @@
                     <div class="section-line"></div>
                 </div>
                 <div class="map-wrapper">
-                    <!-- DOPLNIT SOUŘADNICE -->
+
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.698370697613!2d14.42076!3d50.08804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e1e6c0b0a1%3A0x400af0f66164090!2sPraha!5e0!3m2!1scs!2scz!4v1700000000000!5m2!1scs!2scz"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -345,6 +373,30 @@
                 if (link.getAttribute('href') === '#' + current) {
                     link.classList.add('active');
                 }
+            });
+        });
+    </script>
+
+    <!-- lightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2/lightgallery.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2/plugins/zoom/lg-zoom.umd.js"></script>
+    <script>
+        // Samostatná lightGallery pro každé vozidlo
+        document.querySelectorAll('.vehicle-card').forEach(function(card) {
+            var lgInstance = lightGallery(card, {
+                plugins: [lgZoom, lgThumbnail],
+                selector: '.gallery-item',
+                speed: 400,
+                licenseKey: '0000-0000-000-0000'
+            });
+
+            // Klik na viditelnou část karty otevře galerii
+            card.querySelector('.photo-placeholder').addEventListener('click', function() {
+                card.querySelector('.gallery-item').click();
+            });
+            card.querySelector('.vehicle-card-body').addEventListener('click', function() {
+                card.querySelector('.gallery-item').click();
             });
         });
     </script>
