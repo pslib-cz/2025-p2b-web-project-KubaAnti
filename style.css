@@ -511,6 +511,33 @@ section {
     font-weight: 600;
 }
 
+/* ===== GALLERY ICON ON VEHICLE PHOTOS ===== */
+.photo-placeholder {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    
+    pointer-events: none;
+    z-index: 2;
+   
+    padding: 4px;
+    border-radius: 6px;
+    box-sizing: content-box;
+
+}
+
+.vehicle-card:hover .gallery-icon {
+    opacity: 1;
+}
+
 /* ===== PRICING ===== */
 .pricing-grid {
     display: grid;
